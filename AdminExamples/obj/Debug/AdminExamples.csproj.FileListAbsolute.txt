@@ -1,1 +1,6 @@
 C:\Projects\nacka-admin\AdminExamples\bin\Debug\AdminExamples.exe.config
+C:\Projects\nacka-admin\AdminExamples\bin\Debug\AdminExamples.exe
+C:\Projects\nacka-admin\AdminExamples\bin\Debug\AdminExamples.pdb
+C:\Projects\nacka-admin\AdminExamples\obj\Debug\AdminExamples.csprojResolveAssemblyReference.cache
+C:\Projects\nacka-admin\AdminExamples\obj\Debug\AdminExamples.exe
+C:\Projects\nacka-admin\AdminExamples\obj\Debug\AdminExamples.pdb

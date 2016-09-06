@@ -1,15 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System.Linq;
 
 namespace AdminExamples.Examples
 {
     public class Repository
     {
-        public static bool IsVowel(string letter)
+        //modul 2, övning 9
+        public static bool IsVowel(char letter)
         {
-            var vowels = new List<string> { "a", "e", "i", "o", "u", "y", "å", "ä", "ö" };
+            var vowels = new [] { 'a', 'e', 'i', 'o', 'u', 'y', 'å', 'ä', 'ö' };
 
-            return vowels.Contains(letter);
-            //return vowels.Any(vowel => letter == vowel);
+            return vowels.Contains(letter);   
         }
     }
 }
