@@ -1,1 +1,16 @@
 C:\Projects\nacka-admin\AddressBook\bin\Debug\AddressBook.exe.config
+C:\Projects\nacka-admin\AddressBook\obj\Debug\AddressBook.csprojResolveAssemblyReference.cache
+C:\Projects\nacka-admin\AddressBook\obj\Debug\AddressBook.Form1.resources
+C:\Projects\nacka-admin\AddressBook\obj\Debug\AddressBook.Properties.Resources.resources
+C:\Projects\nacka-admin\AddressBook\obj\Debug\AddressBook.csproj.GenerateResource.Cache
+C:\Projects\nacka-admin\AddressBook\bin\Debug\AddressBook.exe
+C:\Projects\nacka-admin\AddressBook\bin\Debug\AddressBook.pdb
+C:\Projects\nacka-admin\AddressBook\obj\Debug\AddressBook.exe
+C:\Projects\nacka-admin\AddressBook\obj\Debug\AddressBook.pdb
+C:\Projects\nacka-admin\AddressBook\bin\Debug\StructureMap.dll
+C:\Projects\nacka-admin\AddressBook\bin\Debug\StructureMap.Net4.dll
+C:\Projects\nacka-admin\AddressBook\bin\Debug\StructureMap.Web.dll
+C:\Projects\nacka-admin\AddressBook\bin\Debug\StructureMap.pdb
+C:\Projects\nacka-admin\AddressBook\bin\Debug\StructureMap.Net4.pdb
+C:\Projects\nacka-admin\AddressBook\bin\Debug\StructureMap.Web.pdb
+C:\Projects\nacka-admin\AddressBook\bin\Debug\StructureMap.Web.xml
