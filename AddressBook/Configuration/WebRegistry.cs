@@ -13,12 +13,12 @@ namespace AddressBook.Configuration
 
             For<ILogHandler>()
                 .Use<LogHandler>();
-
-            For<ICacheHandler>()
-                .Use<CacheHandler>();
-
+            
             For<IConstants>()
                 .Use<Constants>();
+
+            For<ISearch>()
+                .Use<Search>();
         }
     }
 }

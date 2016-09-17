@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BDBD44E8-4E7B-4259-B924-DB280F18CD75}</ProjectGuid>
+    <ProjectGuid>{3023E5B6-5BDE-4721-9842-C5F4BBD2E254}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AddressBook</RootNamespace>
-    <AssemblyName>AddressBook</AssemblyName>
+    <RootNamespace>SportsCenter</RootNamespace>
+    <AssemblyName>SportsCenter</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,18 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="StructureMap">
-      <HintPath>..\libraries\StructureMap\StructureMap.dll</HintPath>
-    </Reference>
-    <Reference Include="StructureMap.Net4">
-      <HintPath>..\libraries\StructureMap\StructureMap.Net4.dll</HintPath>
-    </Reference>
-    <Reference Include="StructureMap.Web">
-      <HintPath>..\libraries\StructureMap\StructureMap.Web.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,27 +47,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstractions\ContactHandler.cs" />
-    <Compile Include="Abstractions\Interfaces\IContactHandler.cs" />
-    <Compile Include="Abstractions\Interfaces\ILogHandler.cs" />
-    <Compile Include="Abstractions\Interfaces\IConstants.cs" />
-    <Compile Include="Abstractions\Interfaces\ISearch.cs" />
-    <Compile Include="Abstractions\LogHandler.cs" />
-    <Compile Include="Abstractions\Constants.cs" />
-    <Compile Include="Abstractions\Search.cs" />
-    <Compile Include="Configuration\Bootstrapper.cs" />
-    <Compile Include="Configuration\WebRegistry.cs" />
-    <Compile Include="Entities\Contact.cs" />
+    <Compile Include="Entitites\Booking.cs" />
+    <Compile Include="Entitites\Customer.cs" />
+    <Compile Include="Entitites\Day.cs" />
+    <Compile Include="Enums\Courts.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="HoursPerDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoursPerDay.Designer.cs">
+      <DependentUpon>HoursPerDay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoursPerDay.resx">
+      <DependentUpon>HoursPerDay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

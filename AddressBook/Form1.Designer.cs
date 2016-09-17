@@ -42,12 +42,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnSaveContact = new System.Windows.Forms.Button();
             this.lblMessage = new System.Windows.Forms.Label();
-            this.txtBoxListContacts = new System.Windows.Forms.TextBox();
             this.btnDeleteContact = new System.Windows.Forms.Button();
             this.lblContacts = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBoxSearch = new System.Windows.Forms.TextBox();
             this.lblSearch = new System.Windows.Forms.Label();
-            this.btnSearch = new System.Windows.Forms.Button();
+            this.lstBoxContacts = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -165,14 +164,6 @@
             this.lblMessage.Size = new System.Drawing.Size(0, 20);
             this.lblMessage.TabIndex = 12;
             // 
-            // txtBoxListContacts
-            // 
-            this.txtBoxListContacts.Location = new System.Drawing.Point(854, 260);
-            this.txtBoxListContacts.Multiline = true;
-            this.txtBoxListContacts.Name = "txtBoxListContacts";
-            this.txtBoxListContacts.Size = new System.Drawing.Size(621, 206);
-            this.txtBoxListContacts.TabIndex = 13;
-            // 
             // btnDeleteContact
             // 
             this.btnDeleteContact.Location = new System.Drawing.Point(854, 527);
@@ -181,22 +172,24 @@
             this.btnDeleteContact.TabIndex = 14;
             this.btnDeleteContact.Text = "Radera kontakt";
             this.btnDeleteContact.UseVisualStyleBackColor = true;
+            this.btnDeleteContact.Click += new System.EventHandler(this.btnDeleteContact_Click);
             // 
             // lblContacts
             // 
             this.lblContacts.AutoSize = true;
-            this.lblContacts.Location = new System.Drawing.Point(850, 237);
+            this.lblContacts.Location = new System.Drawing.Point(854, 150);
             this.lblContacts.Name = "lblContacts";
             this.lblContacts.Size = new System.Drawing.Size(78, 20);
             this.lblContacts.TabIndex = 15;
             this.lblContacts.Text = "Kontakter";
             // 
-            // textBox1
+            // txtBoxSearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(854, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(621, 26);
-            this.textBox1.TabIndex = 16;
+            this.txtBoxSearch.Location = new System.Drawing.Point(858, 75);
+            this.txtBoxSearch.Name = "txtBoxSearch";
+            this.txtBoxSearch.Size = new System.Drawing.Size(613, 26);
+            this.txtBoxSearch.TabIndex = 16;
+            this.txtBoxSearch.TextChanged += new System.EventHandler(this.txtBoxSearch_TextChanged);
             // 
             // lblSearch
             // 
@@ -207,26 +200,26 @@
             this.lblSearch.TabIndex = 17;
             this.lblSearch.Text = "Sök";
             // 
-            // btnSearch
+            // lstBoxContacts
             // 
-            this.btnSearch.Location = new System.Drawing.Point(854, 138);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(621, 44);
-            this.btnSearch.TabIndex = 18;
-            this.btnSearch.Text = "Sök";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.lstBoxContacts.FormattingEnabled = true;
+            this.lstBoxContacts.ItemHeight = 20;
+            this.lstBoxContacts.Location = new System.Drawing.Point(858, 173);
+            this.lstBoxContacts.Name = "lstBoxContacts";
+            this.lstBoxContacts.Size = new System.Drawing.Size(613, 284);
+            this.lstBoxContacts.TabIndex = 21;
+            this.lstBoxContacts.SelectedIndexChanged += new System.EventHandler(this.lstBoxContacts_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1557, 1025);
-            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.lstBoxContacts);
             this.Controls.Add(this.lblSearch);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBoxSearch);
             this.Controls.Add(this.lblContacts);
             this.Controls.Add(this.btnDeleteContact);
-            this.Controls.Add(this.txtBoxListContacts);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.btnSaveContact);
             this.Controls.Add(this.txtBoxEmail);
@@ -264,12 +257,11 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnSaveContact;
         private System.Windows.Forms.Label lblMessage;
-        private System.Windows.Forms.TextBox txtBoxListContacts;
         private System.Windows.Forms.Button btnDeleteContact;
         private System.Windows.Forms.Label lblContacts;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBoxSearch;
         private System.Windows.Forms.Label lblSearch;
-        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.ListBox lstBoxContacts;
     }
 }
 

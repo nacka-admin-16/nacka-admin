@@ -9,8 +9,10 @@ namespace AddressBook.Abstractions.Interfaces
 
         bool SaveContact(Contact contact);
 
-        bool UpdateContact(string id);
+        bool UpdateContact(Contact contact);
 
         void ValidateContact(Contact contact);
+
+        void DeleteContact(string contactId);
     }
 }
